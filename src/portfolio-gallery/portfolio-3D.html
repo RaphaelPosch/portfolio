@@ -5,30 +5,43 @@
             <title>3D</title>
             <meta name="decription" content="BLA">
             <link rel="stylesheet" href="../stylesheet.css">
+            <link rel="stylesheet" href="../header.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
             <script type="module">
               
                 var slider = tns({
                   container: '.my-slider',
-                  items: 3,
+                  items: 2,
                   slideBy: 'page',
                   autoplay: false,
                   controls: false,
                   nav: false,
                   mouseDrag: true,
                   loop: false,
+                  gutter: 32,
                 });
                 </script>
                 <!--https://www.npmjs.com/package/tiny-slider#install-->
     </head>
-    
+    <body>
     <header>
         <a href="../index.html">
             <img class="logo" src="../../assets/icons/logo.svg" alt="logo" >
         </a>
+        <nav>
+            <li>
+                <button class="primary">my work</button>
+            </li>
+            <li>
+                <button class="primary">about me</button>
+            </li>
+            <li>
+                <button class="primary">write me</button>
+            </li>
+        </nav>
     </header>
-    <body>
+    
         <div class="wrapper">
             <ul class="breadcrumb">
             <li><a href="../index.html">home</a></li>
@@ -43,7 +56,7 @@
                     <p>This project is a part of my Isometric series, where I try to capture a distinct feeling. In this case it's the feeling of wonder of an autumn evening after the rain in an old pharmacy.</p>
                 </div>
             <div class="my-slider">
-                <div><img src="../../assets/content/3d/iso-atelier/01-iso-atelier.jpg"></div>
+                <div><img src="../../assets/content/3d/iso-pharmacy/01-iso-pharmacy.jpg"></div>
                 <div><img src="../../assets/content/3d/iso-pharmacy/02-iso-pharmacy-drawers.jpg"></div>
                 <div><img src="../../assets/content/3d/iso-pharmacy/03-iso-pharmacy-mortel.jpg"></div>
                 <div><img src="../../assets/content/3d/iso-pharmacy/04-iso-pharmacy-chair.jpg"></div>

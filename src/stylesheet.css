@@ -25,6 +25,10 @@
     --color-on-surface-variant: #4B4739;
 
     --color-outline: #7C7767;
+
+    --spacing-inline-main-content: 15vw;
+
+    --font-display-large: raleway;
 }
 
 html {
@@ -38,34 +42,12 @@ body {
     width: 100vw;
 }
 
-header{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-background);
-    margin: 0px;
-    padding: 0px;
-    /*box-shadow: 0px 0px 10px rgba(51,51,51,0.1);*/
-    width: 100vw;
-    border: none;
-    top: 0px;
-    z-index: 99;
-}
 
-.logo {
-    display: block;
-    height: 32px;
-    margin: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    cursor: pointer;
-}
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 70vw;
-    margin: auto;
+    margin-inline: var(--spacing-inline-main-content);
     margin-top: 50px;
 }
 
@@ -266,8 +248,8 @@ footer {
     border-radius: 5px;
     /*box-shadow: 0px 0px 20px rgba(51,51,51,0.05);*/
     z-index: 2;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     user-select: none;
 }
 
