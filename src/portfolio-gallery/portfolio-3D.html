@@ -5,6 +5,22 @@
             <title>3D</title>
             <meta name="decription" content="BLA">
             <link rel="stylesheet" href="../stylesheet.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+            <script type="module">
+              
+                var slider = tns({
+                  container: '.my-slider',
+                  items: 3,
+                  slideBy: 'page',
+                  autoplay: false,
+                  controls: false,
+                  nav: false,
+                  mouseDrag: true,
+                  loop: false,
+                });
+                </script>
+                <!--https://www.npmjs.com/package/tiny-slider#install-->
     </head>
     
     <header>
@@ -20,7 +36,14 @@
             <li><a href="portfolio-3D.html">3d</a></li>
         </ul>
         <div class="project">
-        
+            <div class="my-slider">
+                <div><img src="../../assets/content/3d/iso-atelier/01-iso-atelier.jpg"></div>
+                <div><img src="../../assets/content/3d/iso-pharmacy/02-iso-pharmacy-drawers.jpg"></div>
+                <div><img src="../../assets/content/3d/iso-pharmacy/03-iso-pharmacy-mortel.jpg"></div>
+                <div><img src="../../assets/content/3d/iso-pharmacy/04-iso-pharmacy-chair.jpg"></div>
+                <div><img src="../../assets/content/3d/iso-pharmacy/05-iso-pharmacy-viles.jpg"></div>
+              </div>
+
                 <h2>Pharmacy</h2>
             <div class="gallery-horizontal">
                 <img class="project-image-left" src="../../Work/3D/Pharmacy/render4_Affinity.jpg">

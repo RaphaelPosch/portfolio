@@ -64,7 +64,7 @@ h3 {
     font-size: 16px;
 }
 
-subtext {
+.subtext {
     color: #808080;
     font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -142,14 +142,14 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
     display: inline;
-    font size: 10px;
+    font-size: 10px;
     font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
     font-weight: 200;
     color: #90B380;
 }
 
 ul.breadcrumb li+li:before {
-    padding 8px;
+    padding: 8px;
     content: "/\00a0";
 }
 
@@ -158,7 +158,7 @@ ul.breadcrumb li a {
     text-decoration: none;
 }
 
-button {
+.button {
     font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
     font-weight: 800;
     font-size: 24px;
@@ -236,19 +236,16 @@ footer {
     display: inline-flex;
 }
 
-.project-image-left {
+.my-slider img {
     display: block;
     border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);
-    padding: 20px;
+    /*box-shadow: 0px 0px 20px rgba(51,51,51,0.05);*/
     z-index: 2;
-    width: 50%;
-    height: 50%
-    
+    width: 90%;
+    height: 90%;
+    user-select: none;
 }
 
-.gallery-vertical {
-}
 
 .project-image-right {
     display: inline-flex;
