@@ -1,4 +1,6 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root {
+    --primary-color: #26b887;
+}
 
 html {
     background: #f7f7f7;
@@ -13,7 +15,8 @@ body {
 
 header{
     position: fixed;
-    display: block;
+    display: flex;
+    justify-content: center;
     background-color: #fff;
     margin: 0px;
     padding: 0px;
