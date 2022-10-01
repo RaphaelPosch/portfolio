@@ -1,0 +1,266 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+html {
+    background: #f7f7f7;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    width: 100vw;
+}
+
+header{
+    position: fixed;
+    display: block;
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px rgba(51,51,51,0.1);
+    width: 100vw;
+    border: none;
+    top: 0px;
+    z-index: 99;
+}
+
+.logo {
+    display: block;
+    height: 32px;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    margin-top: 64px;
+    margin-left: 32px;
+    margin-bottom: 0px;
+    color: #90B380;
+    
+}
+
+h2 {
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+subtext {
+    color: #808080;
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-top: 20px;
+    
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #D9D9D9;
+    margin: auto;
+    padding: 0;
+    width: 85%;
+    margin: 8px auto 0px auto;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../Work/3D/Gewaechshaus/Gewaechshaus_Orthographic_Bearbeitet_Website.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    filter: sepia(100%) contrast(0.9) hue-rotate(30deg) saturate(1.5) brightness(0.9);
+    transition: 0.2s;
+    width: 30vw;
+    height: 25vh;
+    margin: 32px;
+    border-radius: 15px;
+}
+
+.card:link {
+    text-decoration: none;
+}
+
+.card:visited {
+    text-decoration: none;
+}
+
+.card:hover {
+    text-decoration: none;
+    filter: initial;
+    box-shadow: 0px 0px 15px rgba(51,51,51,0.5);
+}
+
+.card:active {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+ul.breadcrumb {
+    padding: 8px 20px 8px 20px;
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+    margin: 8px auto 0px auto;
+    width: 80%;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font size: 10px;
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    color: #90B380;
+}
+
+ul.breadcrumb li+li:before {
+    padding 8px;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #90B380;
+    text-decoration: none;
+}
+
+button {
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    background-color: #FDDB30;
+    border-radius: 15px;
+    border: none;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 15px rgba(51,51,51,0.1);
+    background-color: #FEE567;
+}
+
+.category {
+    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: white;
+    transform: translate(-30px, 0px);
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+    margin: auto;
+    margin-left: 70px;
+    text-align: left;
+}
+
+.bg {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 0px;
+    z-index: 3;
+    transition: 0.2s;
+    background-size: cover;
+}
+
+.bg:hover {
+    /*background: url(../Cards/ColorGew%C3%A4chshaus_Orthographic_Bearbeitet_insta.png);*/
+    cursor: pointer;
+    box-shadow: 0px 10px 15px rgba(51, 51, 51, 0.1);
+    z-index: 3;
+}
+
+.CTA {
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+footer {
+    background-color: #ffff;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);*/
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 1;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    width: 80%;
+}
+
+.gallery-horizontal {
+    display: inline-flex;
+}
+
+.project-image-left {
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);
+    padding: 20px;
+    z-index: 2;
+    width: 50%;
+    height: 50%
+    
+}
+
+.gallery-vertical {
+}
+
+.project-image-right {
+    display: inline-flex;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);
+    padding: 20px;
+    z-index: 2;
+    width: 35%;
+}
+
+.project-text {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);
+    z-index: 2;
+    margin-top: 20px;
+}
