@@ -58,7 +58,7 @@ h1 {
     margin-left: 32px;
     margin-bottom: 0px;
     color: var(--color-on-primary-container);
-    
+
 }
 
 h2 {
@@ -78,7 +78,7 @@ h3 {
     letter-spacing: 1px;
     font-size: 10px;
     margin-top: 20px;
-    
+
 }
 
 hr {
@@ -104,7 +104,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     background-image: url(../Work/3D/Gewaechshaus/Gewaechshaus_Orthographic_Bearbeitet_Website.png);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     filter: sepia(100%) contrast(0.9) hue-rotate(30deg) saturate(1.5) brightness(0.9);
     transition: 0.2s;
@@ -125,7 +125,7 @@ hr {
 .card:hover {
     text-decoration: none;
     filter: initial;
-    box-shadow: 0px 0px 15px rgba(51,51,51,0.5);
+    box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.5);
 }
 
 .card:active {
@@ -136,33 +136,6 @@ p {
     font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 16px;
-}
-
-ul.breadcrumb {
-    padding: 8px 20px 8px 20px;
-    list-style: none;
-    background-color: white;
-    border-radius: 5px;
-    margin: 8px auto 0px auto;
-    width: 80%;
-}
-
-ul.breadcrumb li {
-    display: inline;
-    font-size: 10px;
-    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
-    font-weight: 200;
-    color: #90B380;
-}
-
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    content: "/\00a0";
-}
-
-ul.breadcrumb li a {
-    color: #90B380;
-    text-decoration: none;
 }
 
 .button {
@@ -251,7 +224,7 @@ footer {
 .project-image-right {
     display: inline-flex;
     border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);
+    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.05);
     padding: 20px;
     z-index: 2;
     width: 35%;
@@ -261,7 +234,7 @@ footer {
     padding: 20px;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);
+    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.05);
     z-index: 2;
     margin-top: 20px;
 }
