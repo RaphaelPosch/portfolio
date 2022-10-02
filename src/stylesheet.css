@@ -256,3 +256,52 @@ footer {
     flex-direction: column;
     gap: 20px;
 }
+
+.filter-chip-block {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+    gap: 11px;
+}
+
+.filter-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--color-outline);
+    background-color: var(--color-background);
+    border-radius: 5px;
+    padding: 6px 16px 6px 8px;
+    font-family: var(--font-copy);
+    font-weight: 600;
+    font-size: var(--font-size-label-large);
+    color: var(--color-on-surface-variant);
+    user-select: none;
+}
+
+.filter-chip:hover {
+    background-color: var(--color-surface-variant);
+}
+
+.filter-chip:active {
+    
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+label input:checked ~ .filter-chip img {
+    display: inline;
+    
+}
+.filter-chip img {
+    display: none;
+}
+label input:checked ~ .filter-chip{
+background-color: var(--color-secondary-container);
+}
