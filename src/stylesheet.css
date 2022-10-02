@@ -28,20 +28,20 @@
 
     --spacing-inline-main-content: 15vw;
 
-    --font-raleway: "Raleway", "Bahnschrift", Helvetica, Arial, sans-serif;
-    --font-bahnschrift: "Bahnschrift", Helvetica, Arial, sans-serif;
+    --font-display: "Raleway", "Bahnschrift", Helvetica, Arial, sans-serif;
+    --font-copy: "Bahnschrift", Helvetica, Arial, sans-serif;
 
     --font-size-display-large: 57px;
     --font-size-display-medium: 45px;
     --font-size-display-small: 36px;
 
-    --font-size-title-large: 22px;
-    --font-size-title-medium: 16px;
-    --font-size-title-small: 14px;
-
     --font-size-headline-large: 32px;
     --font-size-headline-medium: 28px;
     --font-size-headline-small: 24px;
+
+    --font-size-title-large: 22px;
+    --font-size-title-medium: 16px;
+    --font-size-title-small: 14px;
 
     --font-size-body-large: 16px;
     --font-size-body-medium: 14px;
@@ -76,16 +76,23 @@ h1 {
     font-family: "Raleway";
     font-size: var(--font-size-display-large);
     color: var(--color-on-primary-container);
+    font-weight: 900;
 }
 
 h2 {
-    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
-    font-size: 32px;
+    font-family: var(--font-display);
+    font-size: var(--font-size-headline-large);
+    font-weight: 600;
 }
 
 h3 {
-    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-family: var(--font-display);
+    font-size: var(--font-size-title-large);
+    font-weight: 600;
+}
+
+.project-title{
+    margin-block: 9px;
 }
 
 .subtext {
@@ -128,6 +135,8 @@ video::-webkit-media-controls {
 .stage {
     display:flex;
     align-items: center;
+    gap: 84px;
+    margin-top: 150px;
 }
 
 p {
@@ -210,7 +219,9 @@ footer {
 
 .my-slider img {
     display: block;
-    border-radius: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px;
     /*box-shadow: 0px 0px 20px rgba(51,51,51,0.05);*/
     z-index: 2;
     width: 100%;
@@ -218,11 +229,22 @@ footer {
     user-select: none;
 }
 
-.project-text {
+.project-text-container {
     padding: 20px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.05);
     z-index: 2;
     margin-top: 20px;
+}
+
+.project-text {
+    width: 600px;
+    line-height: 24px;
+}
+
+.stage-font-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
