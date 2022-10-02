@@ -28,7 +28,28 @@
 
     --spacing-inline-main-content: 15vw;
 
-    --font-display-large: raleway;
+    --font-raleway: "Raleway", "Bahnschrift", Helvetica, Arial, sans-serif;
+    --font-bahnschrift: "Bahnschrift", Helvetica, Arial, sans-serif;
+
+    --font-size-display-large: 57px;
+    --font-size-display-medium: 45px;
+    --font-size-display-small: 36px;
+
+    --font-size-title-large: 22px;
+    --font-size-title-medium: 16px;
+    --font-size-title-small: 14px;
+
+    --font-size-headline-large: 32px;
+    --font-size-headline-medium: 28px;
+    --font-size-headline-small: 24px;
+
+    --font-size-body-large: 16px;
+    --font-size-body-medium: 14px;
+    --font-size-body-small: 12px;
+
+    --font-size-label-large: 14px;
+    --font-size-label-medium: 12px;
+    --font-size-label-small: 11px;
 }
 
 html {
@@ -52,13 +73,9 @@ body {
 }
 
 h1 {
-    font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
-    font-size: 32px;
-    margin-top: 64px;
-    margin-left: 32px;
-    margin-bottom: 0px;
+    font-family: "Raleway";
+    font-size: var(--font-size-display-large);
     color: var(--color-on-primary-container);
-
 }
 
 h2 {
@@ -100,36 +117,17 @@ hr {
     margin: 0px;
 }
 
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(../Work/3D/Gewaechshaus/Gewaechshaus_Orthographic_Bearbeitet_Website.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: sepia(100%) contrast(0.9) hue-rotate(30deg) saturate(1.5) brightness(0.9);
-    transition: 0.2s;
-    width: 30vw;
-    height: 25vh;
-    margin: 32px;
-    border-radius: 15px;
+video {
+    user-select: none;
 }
 
-.card:link {
-    text-decoration: none;
-}
+video::-webkit-media-controls {
+    display: none;
+  }
 
-.card:visited {
-    text-decoration: none;
-}
-
-.card:hover {
-    text-decoration: none;
-    filter: initial;
-    box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.5);
-}
-
-.card:active {
-    text-decoration: none;
+.stage {
+    display:flex;
+    align-items: center;
 }
 
 p {
@@ -218,16 +216,6 @@ footer {
     width: 100%;
     height: 100%;
     user-select: none;
-}
-
-
-.project-image-right {
-    display: inline-flex;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.05);
-    padding: 20px;
-    z-index: 2;
-    width: 35%;
 }
 
 .project-text {
