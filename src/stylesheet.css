@@ -180,11 +180,6 @@ ul.breadcrumb li a {
     cursor: pointer;
 }
 
-button:hover {
-    box-shadow: 0px 0px 15px rgba(51,51,51,0.1);
-    background-color: #FEE567;
-}
-
 .category {
     font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
     font-weight: 900;
@@ -236,7 +231,6 @@ footer {
     margin: auto;
     margin-top: 8px;
     margin-bottom: 16px;
-    width: 80%;
 }
 
 .gallery-horizontal {
