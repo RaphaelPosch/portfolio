@@ -77,7 +77,8 @@ h1 {
     font-size: var(--font-size-display-large);
     color: var(--color-on-primary-container);
     font-weight: 900;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    line-height: 64px;
 }
 
 h2 {
@@ -90,6 +91,26 @@ h3 {
     font-family: var(--font-display);
     font-size: var(--font-size-title-large);
     font-weight: 600;
+}
+
+.aboutme {
+    margin-top: 380px;
+}
+
+.icon-beside-stage-subtitle {
+    display: flex;
+    align-items: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-on-background);
+}
+
+.stage-subtitle {
+    font-family: var(--font-copy);
+    font-size: var(--font-size-headline-small);
 }
 
 .project-title{
@@ -204,8 +225,8 @@ footer {
 .project {
     display: flex;
     flex-direction: column;
-    /* background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);*/
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(51,51,51,0.05);
     border-radius: 15px;
     padding: 20px;
     z-index: 1;
@@ -299,9 +320,11 @@ label input:checked ~ .filter-chip img {
     display: inline;
     
 }
+
 .filter-chip img {
     display: none;
 }
+
 label input:checked ~ .filter-chip{
 background-color: var(--color-secondary-container);
 }
