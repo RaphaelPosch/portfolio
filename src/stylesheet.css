@@ -69,7 +69,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin-inline: var(--spacing-inline-main-content);
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 h1 {
@@ -99,8 +99,13 @@ h3 {
 
 .icon-beside-stage-subtitle {
     display: flex;
+    gap: 8px;
     align-items: center;
-    
+    transition: 0.1s ease-in;
+}
+
+.icon-beside-stage-subtitle:hover {
+    gap: 24px;   
 }
 
 a {
@@ -123,7 +128,7 @@ a {
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 10px;
-    margin-top: 20px;
+    margin-block: 20px;
 
 }
 
@@ -158,8 +163,14 @@ video::-webkit-media-controls {
     display:flex;
     align-items: center;
     gap: 84px;
-    margin-top: 150px;
 }
+
+.stage-container {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
 
 p {
     font-family: "Bahnschrift", Helvetica, Arial, sans-serif;
@@ -262,7 +273,7 @@ footer {
     padding: 20px;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.05);
+    /*box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.05);*/
     z-index: 2;
     margin-top: 20px;
 }
@@ -292,12 +303,14 @@ footer {
     border: 1px solid var(--color-outline);
     background-color: var(--color-background);
     border-radius: 5px;
-    padding: 6px 16px 6px 8px;
+    padding: 6px 16px;
     font-family: var(--font-copy);
     font-weight: 600;
     font-size: var(--font-size-label-large);
     color: var(--color-on-surface-variant);
     user-select: none;
+    height: 28px;
+    cursor: pointer;
 }
 
 .filter-chip:hover {
@@ -331,4 +344,5 @@ label input:checked ~ .filter-chip img {
 
 label input:checked ~ .filter-chip{
 background-color: var(--color-secondary-container);
+padding: 6px 16px 6px 8px;
 }
