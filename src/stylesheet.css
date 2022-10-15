@@ -130,8 +130,7 @@ h3 {
 }
 
 .aboutme-quickfacts {
-    min-width: 25vw;
-    
+    margin-inline-end: 50px;
 }
 
 .aboutme-4x-grid {
@@ -414,3 +413,5 @@ label input:checked ~ .filter-chip{
 background-color: var(--color-secondary-container);
 padding: 6px 16px 6px 8px;
 }
+
+@media (max-width: 600px) {
